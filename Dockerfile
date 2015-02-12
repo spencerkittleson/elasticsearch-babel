@@ -6,6 +6,9 @@
 FROM dockerfile/elasticsearch
 MAINTAINER Corey Coto <corey.coto@gmail.com>
 
+# Mount elasticsearch.yml config
+ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+
 # Inquisitor
 RUN /elasticsearch/bin/plugin install polyfractal/elasticsearch-inquisitor
 
