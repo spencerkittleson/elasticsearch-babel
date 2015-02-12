@@ -13,13 +13,13 @@ ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 RUN /elasticsearch/bin/plugin install polyfractal/elasticsearch-inquisitor
 
 # ICU Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-icu/2.4.2
+RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-icu/2.4.1
 
 # Japanese (kuromoji) Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-kuromoji/2.4.2
+RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-kuromoji/2.4.1
 
 # Smart Chinese Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-smartcn/2.4.3
+RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-smartcn/2.4.1
 
 # Polish Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-stempel/2.4.2
+RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-stempel/2.4.1
