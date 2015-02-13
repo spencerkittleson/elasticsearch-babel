@@ -3,10 +3,9 @@
 # with support additional languages
 ############################################################
 
-MAINTAINER Corey Coto <corey.coto@gmail.com>
-
-# Pull base image.
 FROM dockerfile/java:oracle-java8
+
+MAINTAINER Corey Coto <corey.coto@gmail.com>
 
 ENV ES_PKG_NAME elasticsearch-1.4.3
 
