@@ -19,7 +19,7 @@ RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-icu/2
 RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-kuromoji/2.4.1
 
 # Smart Chinese Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-smartcn/2.4.1
+RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-smartcn/2.4.2
 
 # Polish Analysis
 RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-stempel/2.4.1
