@@ -52,3 +52,6 @@ RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-smart
 
 # Polish Analysis
 RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-stempel/2.4.2
+
+# Russian Morphological Analysis
+RUN /elasticsearch/bin/plugin -install analysis-morphology -url http://dl.bintray.com/content/imotov/elasticsearch-plugins/org/elasticsearch/elasticsearch-analysis-morphology/1.2.0/elasticsearch-analysis-morphology-1.2.0.zip
