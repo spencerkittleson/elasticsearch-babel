@@ -57,4 +57,4 @@ RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-stemp
 RUN /elasticsearch/bin/plugin -install analysis-morphology -url http://dl.bintray.com/content/imotov/elasticsearch-plugins/org/elasticsearch/elasticsearch-analysis-morphology/1.2.0/elasticsearch-analysis-morphology-1.2.0.zip
 
 # Korean Analysis (https://github.com/jaeyoi/elasticsearch-analysis-korean)
-RUN /elasticsearch/bin/plugin -install elasticsearch-analysis-korean -url https://dl.dropboxusercontent.com/u/7378689/elasticsearch-analysis-korean-1.2.0.zip
+# RUN /elasticsearch/bin/plugin -install elasticsearch-analysis-korean -url https://dl.dropboxusercontent.com/u/7378689/elasticsearch-analysis-korean-1.2.0.zip
