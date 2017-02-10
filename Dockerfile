@@ -3,11 +3,11 @@
 # with support additional languages
 ############################################################
 
-FROM dockerfile/java:oracle-java8
+FROM openjdk
 
 MAINTAINER Corey Coto <corey.coto@gmail.com>
 
-ENV ES_PKG_NAME elasticsearch-1.4.3
+ENV ES_PKG_NAME elasticsearch-2.4.3
 
 # Install Elasticsearch.
 RUN \
@@ -42,19 +42,19 @@ ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 RUN /elasticsearch/bin/plugin install polyfractal/elasticsearch-inquisitor
 
 # KOPF
-RUN /elasticsearch/bin/plugin install lmenezes/elasticsearch-kopf/1.4
+RUN /elasticsearch/bin/plugin install lmenezes/elasticsearch-kopf
 
 # ICU Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-icu/2.4.2
+RUN /elasticsearch/bin/plugin install analysis-icu
 
 # Japanese (kuromoji) Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-kuromoji/2.4.2
+RUN /elasticsearch/bin/plugin install analysis-kuromoji
 
 # Smart Chinese Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-smartcn/2.4.3
+RUN /elasticsearch/bin/plugin install analysis-smartcn
 
 # Polish Analysis
-RUN /elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-stempel/2.4.2
+RUN /elasticsearch/bin/plugin install analysis-stempel
 
 # Russian Morphological Analysis
-RUN /elasticsearch/bin/plugin -install analysis-morphology -url http://dl.bintray.com/content/imotov/elasticsearch-plugins/org/elasticsearch/elasticsearch-analysis-morphology/1.2.0/elasticsearch-analysis-morphology-1.2.0.zip
+RUN /elasticsearch/bin/plugin install  http://dl.bintray.com/content/imotov/elasticsearch-plugins/org/elasticsearch/elasticsearch-analysis-morphology/2.4.3/elasticsearch-analysis-morphology-2.4.3.zip
