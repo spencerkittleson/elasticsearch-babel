@@ -3,3 +3,5 @@ path:
   logs: /data/log
   plugins: /elasticsearch/plugins
   work: /data/work
+network:
+  host: _eth0_

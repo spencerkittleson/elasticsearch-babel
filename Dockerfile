@@ -27,7 +27,7 @@ ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 WORKDIR /data
 
 # Define default command.
-CMD ["/elasticsearch/bin/elasticsearch"]
+CMD ["/elasticsearch/bin/elasticsearch -Des.insecure.allow.root=true"]
 
 # Expose ports.
 #   - 9200: HTTP
