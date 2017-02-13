@@ -58,3 +58,6 @@ RUN /elasticsearch/bin/plugin install analysis-stempel
 
 # Russian Morphological Analysis
 RUN /elasticsearch/bin/plugin install  http://dl.bintray.com/content/imotov/elasticsearch-plugins/org/elasticsearch/elasticsearch-analysis-morphology/2.4.3/elasticsearch-analysis-morphology-2.4.3.zip
+
+# Delete-by-query plugin
+RUN /elasticsearch/bin/plugin install delete-by-query
